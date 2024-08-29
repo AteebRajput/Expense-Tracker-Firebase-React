@@ -5,7 +5,7 @@
   flex-direction: column;
   /* margin-top: 400px; */
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   background: linear-gradient(to bottom, lightblue, dodgerblue);
 }
@@ -64,4 +64,25 @@
   
   .login login-button:hover {
     transform: scale(1.1);
+  }
+
+  @media screen and (max-width:550px) {
+    .login h1{
+      font-size: 50px;
+    }
+    .login p{
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width:440px) {
+    .login h1{
+      font-size: 30px;
+    }
+    .login p{
+      font-size: 22px;
+    }
+    .login img{
+      height: 60px;
+    }
   }
